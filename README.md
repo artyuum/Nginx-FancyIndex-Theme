@@ -7,13 +7,13 @@ My personnal theme of Nginx-FancyIndex.
 2. fancyindex module (nginx-extras)
 
 # Installation
-1. Download the repository to `/etc/nginx/`.
+1. `git clone https://github.com/ArtyumX/Nginx-FancyIndex-Theme.git /etc/nginx/fancyindex_theme`.
 2. Edit your virtual host as follow :
 ```bash
 location /  {
     fancyindex on;
-    fancyindex_header "/Nginx-Fancyindex-Theme/header.html";
-    fancyindex_ignore "/Nginx-Fancyindex-Theme-light";
+    fancyindex_header "/fancyindex_theme/header.html";
+    fancyindex_ignore "/fancyindex_theme";
 }
 
 location /fancyindex_theme {
