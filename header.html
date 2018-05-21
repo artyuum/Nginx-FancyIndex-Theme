@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FancyIndex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        window.onload = function() {
+            var currentIndex = document.getElementsByTagName("h1")[0].textContent;
+            var links = document.getElementsByTagName("tbody")[0].getElementsByTagName("a");
+            var parentDirectory = links[0];
+            
+            // set the page title
+            document.title = 'Index of ' + currentIndex;
+            
+            // change the parent directory icon
+            if (parentDirectory.text == 'Parent directory/') {
+                parentDirectory.classList.add("parent");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>

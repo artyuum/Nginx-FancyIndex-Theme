@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #34495e;
+    font-family: sans-serif;
+    margin: auto;
+    max-width: 980px;
+    padding: 15px;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border: none;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+table > thead {
+    text-align: left;
+    border-bottom: 01px solid #2c3e50;
+}
+
+table td {
+    word-break: break-all;
+    border-bottom: 1px solid #edf1f5;
+    
+}
+
+table th, td {
+    padding: 10px;
+}
+
+table tr td a {
+    display: block;
+    width: 100%;
+}
+
+table thead th:last-child,
+table tr td:last-child {
+    text-align: right;
+}
+
+h1 {
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h1:before {
+    content: 'Index of ';
+}
+
+table tbody tr:hover {
+    background: #f1f2f6;
+}
+
+/*********/
+/* ICONS */
+/*********/
+table tbody tr a:before {
+    content: '';
+    font-family: 'FontAwesome';
+    padding: 5px 25px 0 0;
+}
+
+/* Default */
+table tbody tr a:before {
+    content: "\f15b";
+}
+
+/* Directory */
+table tbody tr a[href$="/"]:before {
+    content: '\f07b';
+}
+
+/* Parent directory */
+table tbody tr a.parent:before {
+    content: '\f060';
+}
+
+/* Audio */
+table tbody tr a[href$=".aif"]:before,
+table tbody tr a[href$=".flac"]:before,
+table tbody tr a[href$=".iff"]:before,
+table tbody tr a[href$=".m3u"]:before,
+table tbody tr a[href$=".m4a"]:before,
+table tbody tr a[href$=".mp3"]:before,
+table tbody tr a[href$=".wav"]:before,
+table tbody tr a[href$=".wav"]:before {
+    content: '\f001';
+}
+
+/* Video */
+table tbody tr a[href$=".3g2"]:before,
+table tbody tr a[href$=".3gp"]:before,
+table tbody tr a[href$=".asf"]:before,
+table tbody tr a[href$=".avi"]:before,
+table tbody tr a[href$=".flv"]:before,
+table tbody tr a[href$=".m4v"]:before,
+table tbody tr a[href$=".mov"]:before,
+table tbody tr a[href$=".mp4"]:before,
+table tbody tr a[href$=".mpg"]:before,
+table tbody tr a[href$=".mpeg"]:before,
+table tbody tr a[href$=".mkv"]:before,
+table tbody tr a[href$=".vob"]:before,
+table tbody tr a[href$=".wmv"]:before,
+table tbody tr a[href$=".webm"]:before {
+    content: '\f008';
+}
+
+/* Image */
+table tbody tr a[href$=".bmp"]:before,
+table tbody tr a[href$=".dds"]:before,
+table tbody tr a[href$=".gif"]:before,
+table tbody tr a[href$=".jpeg"]:before,
+table tbody tr a[href$=".jpg"]:before,
+table tbody tr a[href$=".png"]:before,
+table tbody tr a[href$=".tif"]:before,
+table tbody tr a[href$=".tiff"]:before,{
+    content: '\f1c6';
+}
+
+/* Archive */
+table tbody tr a[href$=".7z"]:before,
+table tbody tr a[href$=".gz"]:before,
+table tbody tr a[href$=".rar"]:before,
+table tbody tr a[href$=".tar"]:before,
+table tbody tr a[href$=".jpg"]:before,
+table tbody tr a[href$=".tar.gz"]:before,
+table tbody tr a[href$=".bz2"]:before,
+table tbody tr a[href$=".zip"]:before,
+table tbody tr a[href$=".gz"]:before {
+    content: '\f1c6';
+}
