@@ -129,7 +129,7 @@ table tbody tr a[href$=".jpeg"]:before,
 table tbody tr a[href$=".jpg"]:before,
 table tbody tr a[href$=".png"]:before,
 table tbody tr a[href$=".tif"]:before,
-table tbody tr a[href$=".tiff"]:before,{
+table tbody tr a[href$=".tiff"]:before {
     content: '\f1c6';
 }
 
