@@ -1,13 +1,13 @@
 # Nginx-FancyIndex-Theme
 My personnal theme of Nginx-FancyIndex.
-![screenshot](https://github.com/ArtyumX/Nginx-FancyIndex-Theme/raw/master/screenshot.PNG)
+![screenshot](https://github.com/artyuum/Nginx-FancyIndex-Theme/raw/master/screenshot.PNG)
 
 # Requirements
 1. nginx
 2. fancyindex module (nginx-extras)
 
 # Installation
-1. `git clone https://github.com/ArtyumX/Nginx-FancyIndex-Theme.git /etc/nginx/fancyindex_theme`.
+1. `git clone https://github.com/artyuum/Nginx-FancyIndex-Theme.git /etc/nginx/fancyindex_theme`.
 2. Edit your virtual host as follow :
 ```bash
 location /  {
