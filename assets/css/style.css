@@ -144,3 +144,18 @@ table tbody tr a[href$=".zip"]:before,
 table tbody tr a[href$=".gz"]:before {
     content: '\f1c6';
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #c9d1d9;
+        background: #0d1117;
+    }
+    table td {
+        border-bottom: 1px solid #ffffff0d;
+    }
+    table tbody tr:hover {
+        color: #fff;
+        background: #161b22;
+    }
+}
