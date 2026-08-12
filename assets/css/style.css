@@ -73,6 +73,9 @@ table tbody tr:hover {
 table tbody tr a:before {
     content: '';
     font-family: 'FontAwesome';
+    width: 1.25em;
+    text-align: center;
+    display: inline-block;
     padding: 5px 10px 0 0;
 }
 
